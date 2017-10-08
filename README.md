@@ -1,14 +1,18 @@
-# spark-core-security-camera
-Building a Wifi Security Camera by using Spark Core
+# particle-photon-flir-infrared-camera
+Building a Wifi Infrared Camera by using Particle Photon
 
 # Install:
 
-### Spark Core: 
-Flash the Spark Core with *getVideo* file under *ArduinoWifiSecurityCamera* folder
+### Particle Photon: 
 
+Install the `particle-cli` tools using `npm install particle`.
 
-###Web Application: 
-Do following steps Under *WifiSecurityCamera* 
+Flash the Particle Photon in the *ArduinoWifiInfraredCamera* folder using
+  ```particle compile photon .
+     particle flash flirduino FlirDuino.bin```
+
+### Web Application: 
+Do following steps Under *WifiInfraredCamera* 
 
   - Install [node.js]
   - Run
@@ -26,8 +30,8 @@ Do following steps Under *WifiSecurityCamera*
 # Note
 
 You should edit following files and put your corresponding server IP and device information
-  - *getVido*
-  - *public/js/app.js*
+  - *ArduinoWifiInfraredCamera/FlirDuino.ino*
+  - *WifiInfraredCamera/public/js/app.js*
 
 [node.js]:http://nodejs.org
 [localhost:3000]:http://localhost:3000/
